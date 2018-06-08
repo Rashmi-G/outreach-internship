@@ -1,0 +1,19 @@
+<p>8. Write a JavaScript function that accepts a string as a parameter and converts the first letter of each word of the string in upper case.</p>
+
+<form>
+Enter the string value: <input type="text" id='demo'><br><br>
+<button onclick = "upString()">submit</button>
+</form>
+
+
+<script>
+function upString(){
+	var str = document.getElementById('demo').value;
+	var a = str.split(" ");
+    var x = a.length;
+	for (var i=0; i< x; i++){
+	a[i] = a[i][0].toUpperCase() + a[i].substr(1);
+	}
+	document.write(a.join(""));
+}
+</script>

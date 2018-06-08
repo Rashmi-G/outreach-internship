@@ -1,0 +1,18 @@
+<p>5. Write a JavaScript exercise to get the extension of a filename.</p>
+
+<form>
+Enter the filename: <input type="text" id="demo"><br><br>
+<button onclick = "fileExtension()">submit</button>
+</form>
+
+<script>
+
+ function fileExtension(){
+ var x = document.getElementById("demo").value;
+	var y = x.split(".");
+	var z = y[1];
+	document.write("The file is of: "+z);
+	}
+</script>
+
+
